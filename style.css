@@ -1,0 +1,44 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+.heading{
+    margin-top: 40vh;   
+    padding-bottom: 10px;
+}
+
+
+.url-input, .Download {
+    font-size: 1.3rem;
+    padding: 5px 10px;
+}
+
+.url-input{
+    border-radius: 10px;
+    width: 30rem;
+    text-align: left;
+    border: 5px solid rgb(142, 185, 241);
+}
+
+.url-input:focus{
+    border: 5px solid greenyellow;
+}
+.Download{
+    border-radius: 20px;
+    border: 5px solid rgb(119, 53, 241);
+    
+}
+
+.Download:focus{
+    background-color: rgb(119, 53, 241) ;
+    color: white;
+    
+}
