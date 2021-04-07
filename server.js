@@ -9,7 +9,7 @@ app.listen(PORT, () => {
     console.log("server is running ");
 });
 app.get('/',(req,res)=>{
-    res.sendFile(__dirname + '/index.html');
+    res.render('index.html');
     var URL = req.query.URL; 
     res.header('Content-Disposition','attachment; filename="video.mp4');
     ytdl(URL,{format: 'mp4'}).pipe(res);
