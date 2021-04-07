@@ -2,9 +2,10 @@
   "name": "youtube_downloader",
   "version": "1.0.0",
   "description": "video downloader made through node package ytdl-core.",
-  "main": "script.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "keywords": [
     "download",
