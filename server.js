@@ -11,7 +11,10 @@ app.listen(PORT, () => {
     console.log("server is running ");
 });
 app.get('*',(req,res)=>{
-    res.render('/index.html');
+    res.render('index.html');
+
+    myVar = setInterval(5000);
+    clearInterval(myVar);
     var URL = req.query.URL; 
     res.header('Content-Disposition','attachment; filename="video.mp4');
     ytdl(URL,{format: 'mp4'}).pipe(res);
