@@ -2,7 +2,7 @@ var dlbtn = document.querySelector('.Download');
 var urlinp = document.querySelector('.url-input');
 
 dlbtn.addEventListener("click",function() {
-    console.log(`URL : $(urlinp.value)`);
+    console.log(`URL : ${urlinp.value}`);
     sendURL(urlinp.value);
 })
 
